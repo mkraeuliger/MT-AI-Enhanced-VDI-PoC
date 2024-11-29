@@ -16,7 +16,7 @@ This repository contains the code and relevant documentation for the artifact de
 
 ## Key Components
 
-1. **Azure Virtual Desktop (AVD) Integration**:
+1. **Azure Virtual Desktop (AVD) **:
    - Provides the virtual machines (VMs) and hosts applications and desktops.
    - Supplies continuous data on metrics such as CPU and RAM usage for performance monitoring.
 
