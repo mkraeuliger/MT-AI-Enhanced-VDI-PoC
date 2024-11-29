@@ -6,13 +6,9 @@ This repository contains the code and relevant documentation for the artifact de
 
 ## Repository Structure
 
-- **/src**: Contains all source code files for the artifact, including scripts for data collection, data preprocessing, model training, and deployment.
-- **/notebooks**: Jupyter notebooks for data analysis, model training, and testing.
 - **/docs**: Supplementary documentation, research notes, and diagrams that illustrate the architecture and design processes.
-- **/config**: Configuration files for deployment in the Azure environment.
 - **/scripts**: PowerShell and Python scripts for setting up the Azure environment and automating workflows.
-- **/tests**: Test cases and scripts for end-to-end testing of the artifact’s functionality.
-- **/results**: Outputs from the experiments, including model performance metrics and logs.
+- **/tests**: Test cases and results form end-to-end testing of the artifact’s functionality.
 
 ## Key Components
 
