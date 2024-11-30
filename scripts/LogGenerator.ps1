@@ -1,3 +1,40 @@
+<#
+    Script Name:   CPU_RAM_Log_Generator_GUI.ps1
+    Description:   A PowerShell script with a GUI interface for generating synthetic CPU and RAM usage logs.
+                   This script allows users to input parameters such as:
+                     - Start and end dates for data generation.
+                     - Workdays and work hours during which logs should be generated.
+                     - A specific "high load" day with an increased CPU load percentage.
+                   The script creates a CSV file with 15-minute interval data, including:
+                     - Timestamp
+                     - Average CPU usage (percentage)
+                     - Average RAM usage (percentage, based on CPU usage)
+
+    Version:       1.0
+    Created By:    Moritz Kräuliger (moritz.kraeuliger@students.fhnw.ch)
+    Last Modified: 2024-11-30
+
+    Features:
+      - User-friendly GUI for parameter input.
+      - Customizable workdays, hours, and load distribution patterns.
+      - Automatically generates CPU and RAM usage data with realistic patterns.
+      - Highlights specific "high load" days with customizable increased usage percentages.
+
+    Inputs: 
+      - Start Date: Defines the start of the log generation period.
+      - End Date: Defines the end of the log generation period.
+      - Workdays: Days of the week during which logs will be generated.
+      - Work Hours: Time range during each workday for log generation.
+      - High Load Day: A specific day with increased CPU usage.
+      - High Load Percentage: Multiplier for the increased load on the defined high load day.
+
+    Outputs:
+      - A CSV file (`cpu_ram_usage_with_gui.csv`) saved in `C:\temp`, containing:
+        - Date and time of each log entry.
+        - Simulated average CPU and RAM usage percentages for each interval.
+#>
+
+
 # Load necessary .NET types for GUI components
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
