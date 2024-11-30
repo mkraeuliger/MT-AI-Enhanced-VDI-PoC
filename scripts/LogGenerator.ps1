@@ -1,5 +1,5 @@
 <#
-    Script Name:   CPU_RAM_Log_Generator_GUI.ps1
+    Script Name:   LogGenerator.ps1
     Description:   A PowerShell script with a GUI interface for generating synthetic CPU and RAM usage logs.
                    This script allows users to input parameters such as:
                      - Start and end dates for data generation.
