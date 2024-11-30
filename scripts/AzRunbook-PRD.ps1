@@ -1,4 +1,4 @@
-<#  Script Name:   IntelligentAzureResourceManager.ps1
+<#  Script Name:   AzRunbook-PRD.ps1
     Description:   Azure Automation script for intelligent resource management of Azure resources.
                    Triggered by an Azure Alert (Action Group), this script:
                      - Retrieves VM details to check resource usage.
