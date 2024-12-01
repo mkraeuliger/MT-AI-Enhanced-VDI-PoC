@@ -1,3 +1,35 @@
+"""
+Script Name:   DataPreProc.py
+Description:   This script preprocesses a dataset containing CPU and RAM usage logs
+               for machine learning purposes. It:
+                 - Loads the dataset from a CSV file.
+                 - Handles missing values using forward-fill (if applicable).
+                 - Extracts relevant features for classification.
+                 - Splits the dataset into training and testing subsets.
+                 - Exports the training and test datasets to separate CSV files.
+
+Version:       1.0
+Created By:    Moritz Kräuliger (moritz.kraeuliger@students.fhnw.ch)
+Last Modified: 2024-11-29
+
+Features:
+  - Prepares data for machine learning by handling missing values and normalizing features.
+  - Supports binary classification using the "Alert Series" column as the target variable.
+  - Encodes time-based and categorical features like "Concrete Hour" and days of the week (Monday-Sunday).
+  - Outputs datasets in a format suitable for model training and evaluation.
+
+Inputs:
+  - A CSV file (`cpu_ram_usage_with_concrete_hour_alert_series.csv`) containing:
+      - Features like CPU and RAM usage, encoded days of the week, and "Concrete Hour."
+      - A target variable ("Alert Series") indicating alert conditions.
+
+Outputs:
+  - Two CSV files:
+      - `train.csv`: Training dataset containing 80% of the data.
+      - `test.csv`: Testing dataset containing 20% of the data.
+"""
+
+# Import modules
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
