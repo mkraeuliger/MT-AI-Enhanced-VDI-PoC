@@ -28,6 +28,9 @@ This repository contains the code and relevant documentation for the artifact de
    - Builds, trains, and deploys machine learning models to predict and optimize resource allocation.
    - Enables proactive resource management and scaling decisions based on predictive analytics.
 
+## Video
+[![MT-ArtifactResult](https://img.youtube.com/vi/6D2IzQyS8RY/0.jpg)](https://www.youtube.com/watch?v=6D2IzQyS8RY)
+
 ## Installation
 
 1. Clone the repository:
